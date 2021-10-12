@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercício 11-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <form name="registo" method="post" action="mailto:o_seu_email@servico.com">
+        <fieldset><legend>Dados Pessoais</legend>
+          <br/> 
+        <table border="1">
+            <tr>
+                <p>
+                    <td align="right">Nome:</td>
+                    <td>
+                        <input type="text" tabindex="1" name="nome" size="40" maxlength="50" value="primeiro nome e apelido">
+                    </td>
+
+                </p>
+            </tr>
+            <tr>
+                <p>
+                    <td valign="top" align="right">Morada:</td>
+                    <td>
+                        <textarea cols="50" rows="4" name="morada"></textarea>
+                    </td>
+                </p>
+            </tr>
+            <tr>
+                <p>
+                    <td align="right">Código Postal:</td>
+                    <td>
+                        <input type="text" name="cod_postal" size="10">
+                    </td>
+                </p>
+            </tr>
+            <tr>
+                <p>
+                    <td align="right">Localidade:</td>
+                    <td>
+                        <input type="text" name="localidade" size="30">
+                    </td>
+                </p>
+            </tr>
+            <tr>
+                <p>
+                    <td align="right">Telefone:</td>
+                    <td>
+                        <input type="text" tabindex="2" name="telefone" size="10">
+                    </td>
+                </p>
+            <tr>
+                <p>
+                    <td>E-mail:</td>
+                    <td>
+                        <input type="text" tabindex="3" name="email" size="30">
+                    </td>
+                </p>
+            </tr>
+            </table>
+        </fieldset>
+            <br/>
+            <p>Nacionalidade:
+                <br/>
+                <input type="radio" id="nac_pt" name="nacionalidade" value="pt" checked="checked"><label for="nac_pt">Portuguesa</label>
+                <br/>
+                <input type="radio" id="nac_br" name="nacionalidade" value="br"><label for="nac_br">Brasileira</label>
+                <br/>
+                <input type="radio" id="nac_es" name="nacionalidade" value="es"><label for="nac_es">Espanhola</label>
+            </p>
+            <p>
+                Línguas faladas:
+                <br/>
+                <input type="checkbox" name="linguas" value="pt" checked="checked">Português
+                <br/>
+                <input type="checkbox" name="linguas" value="es">Espanhol
+                <br/>
+                <input type="checkbox" name="linguas" value="uk">Inglês
+                <br/>
+                <input type="checkbox" name="linguas" value="fr">Francês
+                <br/>
+                <input type="checkbox" name="linguas" value="de">Alemão
+            </p>
+            <p>
+                <select name="area_prof">
+                    <option value="">-- Escolha uma opção --</option>
+                    <option value="educacao">Educação</option>
+                    <option value="informatica">Informática</option>
+                    <option value="gestao">Gestão</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="rh">Recursos Humanos</option>
+                    <option value="outra">Outra</option>
+                </select>
+            </p>
+            <p>Função:
+                <select name="funcao" size="4">
+                    <option value="direcao">Direção</option>
+                    <option value="gerencia">Gerência</option>
+                    <option value="secretariado">Secretariado</option>
+                    <option value="chefia">Chefia</option>
+                </select>
+            </p>
+            <p align="center">
+                <input type="submit" name="enviar" value="Enviar">
+                <input type="reset" name="limpar" value="Limpar">
+                <input type="button" name="imprimir" value="Imprimir" onClick="window.print();">
+            </p>
+    </form>
+</body>
+
+</html>

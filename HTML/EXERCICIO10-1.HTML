@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercicio 10-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form name="registo" method="post" action="mailto:o_seu_email@servico.com">
+        <p>Nome:
+            <input type="text" name="nome" size="40" maxlength="50" value="primeiro nome e apelido">
+        </p>
+        <p>Código Postal:
+            <input type="text" name="cod_postal" size="10">
+        </p>
+        <p>Localidade:
+            <input type="text" name="localidade" size="30">
+        </p>
+        <p>Telefone:
+            <input type="text" name="telefone" size="10">
+        </p>
+        <p>E-mail:
+            <input type="text" name="email" size="30">
+        </p>
+        <p>Morada:
+            <textarea cols="50" rows="4" name="morada"></textarea>
+        </p>
+        <p>Nacionalidade:
+            <br/>
+            <input type="radio" name="nacionalidade" value="pt" checked="checked">Portuguesa
+            <br/>
+            <input type="radio" name="nacionalidade" value="br">Brasileira
+            <br/>
+            <input type="radio" name="nacionalidade" value="es">Espanhola
+        </p>
+        <p>
+            Línguas faladas:
+            <br/>
+            <input type="checkbox" name="linguas" value="pt" checked="checked">Português
+            <br/>
+            <input type="checkbox" name="linguas" value="es">Espanhol
+            <br/>
+            <input type="checkbox" name="linguas" value="uk">Inglês
+            <br/>
+            <input type="checkbox" name="linguas" value="fr">Francês
+            <br/>
+            <input type="checkbox" name="linguas" value="de">Alemão
+        </p>
+        <p><select name="area_prof">
+            <option value="">-- Escolha uma opção --</option>
+            <option value="educacao">Educação</option>
+            <option value="informatica">Informática</option>
+            <option value="gestao">Gestão</option>
+            <option value="vendas">Vendas</option>
+            <option value="rh">Recursos Humanos</option>
+            <option value="outra">Outra</option>
+        </select></p>
+        <p>Função: <select name="funcao"  size="4">
+                <option value="direcao">Direção</option>
+                <option value="gerencia">Gerência</option>
+                <option value="secretariado">Secretariado</option>
+                <option value="chefia">Chefia</option>
+        </select></p>
+        <p align="center">
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset"  name="limpar" value="Limpar">
+            <input type="button" name="imprimir" value="Imprimir" onClick="window.print();">
+        </p>
+    </form>
+</body>
+
+</html>
